@@ -1,0 +1,9 @@
+﻿*.o
+*.obj
+*.exe
+*.out
+*.elf
+test_fsm
+build/
+bin/
+.vscode/
