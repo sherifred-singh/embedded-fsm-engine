@@ -67,3 +67,4 @@ fsm_state_t fsm_get_previous_state(const fsm_t *fsm);
 #endif
 
 #endif /* FSM_H */
+/* MISRA-C:2012 Rule 8.4 Compliant Table-Driven State Machine Engine */
