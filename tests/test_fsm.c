@@ -65,7 +65,11 @@ int main(void) {
     assert(ats.mains_relay_closed == true);
     assert(ats.gen_relay_closed == false);
 
-    printf("[9] Simulating Emergency Stop Interlock -> FAULT_LOCKOUT\n");
+    printf("[9] Simulating Crank Failure & Fault Lockout Recovery\n");
+    fsm_dispatch(&fsm, ATS_EVENT_MAINS_LOST);
+    fsm_dispatch(&fsm, ATS_EVENT_TICK_1S);
+    assert(fsm_get_state(&fsm) == ATS_STATE_GEN_CRANKING);
+
     fsm_dispatch(&fsm, ATS_EVENT_GEN_CRANK_FAIL);
     assert(fsm_get_state(&fsm) == ATS_STATE_FAULT_LOCKOUT);
 
