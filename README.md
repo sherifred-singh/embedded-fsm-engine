@@ -1,6 +1,6 @@
 ﻿# ⚙️ Embedded Event-Driven Finite State Machine (FSM) Engine
 
-[![C/C++ FSM CI](https://github.com/Sherifred123/embedded-fsm-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/Sherifred123/embedded-fsm-engine/actions/workflows/ci.yml)
+[![C/C++ FSM CI](https://github.com/sherifred-singh/embedded-fsm-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/sherifred-singh/embedded-fsm-engine/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A robust, table-driven **Finite State Machine (FSM) Framework** written in pure C99 for industrial embedded systems (**PIC18**, **STM32**, **ESP32**).
@@ -73,3 +73,4 @@ make
 
 ## 📜 License
 Released under the [MIT License](LICENSE). Designed and maintained by **Sherifred Singh**.
+
